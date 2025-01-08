@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLATE-FORME ASA EN LIGNE </title>
+    <!--Start of Tawk.to Script-->
+
+
+
+   <style >  
+       
+       
+    <script > document.getElementById('formulaire').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    var portefeuille = document.getElementById('portefeuille').value;
+    var montant = document.getElementById('montant').value;
+    var reseau = document.getElementById('reseau').value;
+    var adresse = document.getElementById('adresse').value;
+    var whatsapp = document.getElementById('whatsapp').value;
+    var preuve = document.getElementById('preuve').value;
+
+    var message = "Portefeuille: " + portefeuille + "\n" +
+                  "Montant: " + montant + "\n" +
+                  "Réseau: " + reseau + "\n" +
+                  "Adresse: " + adresse + "\n" +
+                  "Numéro WhatsApp: " + whatsapp + "\n" +
+                  "Preuve de paiement: " + preuve;
+
+    var whatsappUrl = "https://wa.me/261323911654?text=" + encodeURIComponent(message);
+
+    window.open(whatsappUrl, '_blank');
+});
+ 
+   </script>    
+       
+       
+       
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: orange;
+            margin: 0;
+            height: 100vh 
+            Color :red 
+          }
+          
+          body {
+      background-color : white ; /* Soloy ny 'image.jpg' amin'ny anaran'ny sary tianao hampiasaina */
+      background-size: cover; /* Mampifanaraka ny sary ho feno ilay page */
+      background-repeat: no-repeat; /* Aza averina ilay sary */
+      background-attachment: fixed; /* Raha scrolling dia hijanona ilay background */
+   } 
+          
+        p {
+      border: 2px solid black; /* Mamorona bordure (2px matevina, loko mainty) */
+      padding: 10px; /* Manome elanelana anatiny (miala amin'ny sisiny anatiny ny texte) */
+      margin: 20px; /* Manome elanelana eo amin'ilay cadre sy ny zavatra hafa */
+      border-radius: 5px; /* Mampitovy sisiny (boribory kely) */
+      background-color: orange ; /* Loko malefaka ao anatiny */
+    }
+        
+        .container {
+            display: flex;
+            justify-content: center; /* Afovoany amin'ny lafiny horizontal */
+            align-items: center; /* Afovoany amin'ny lafiny vertikal */
+            height: 100vh; /* Hahafeno ny haavon'ny efijery */
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%; /* Atao mifanaraka amin'ny sakany */
+            max-height: 100%; /* Atao mifanaraka amin'ny haavony */
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #007BFF;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar button {
+            background-color: #ffffff;
+            color: #007BFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .navbar button:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        .content {
+            margin-top: 70px;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #555;
+        }
+
+ 
+.link-container {
+    text-align: center;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+.r{
+    Color :red;
+    Text-align : centre ;
+}
+
+h6{
+    Color : red
+
+}
+h2{
+    Color :red, bleu
+}
+. A{
+    Color: black ;
+    background-color: blue ;
+}
+.B{
+    border: 2px solid black ;
+    background-image: url ="r.jpg"
+    
+}
+
+img {
+      border: 5px solid black; /* Bordure matevina manodidina ny sary */
+      border-radius: 10px; /* Mampitovy sisiny (boribory kely) */
+      padding: 5px; /* Elanelana anatiny eo amin'ny sary sy ny bordure */
+      background-color: #f0f0f0; /* Loko eo amin'ny sisiny (fotsy volondavenona malefaka) */
+      max-width: 100%; /* Miantoka fa tsy mihoatra ny haben'ny parent ilay sary */
+      height: auto; /* Miaro ny ratio an'ny sary */
+    }
+    
+    /* Cadre manodidina */
+    .cadre {
+      border: 2px solid black; /* Bordure mitohy */
+      border-radius: 10px; /* Sisiny boribory kely */
+      padding: 15px; /* Elanelana anatiny */
+      margin: 20px auto; /* Afovoany ilay cadre */
+      background-color: #f9f9f9; /* Loko anatiny malefaka */
+      max-width: 500px; /* Haben'ny cadre (afaka ovaina) */
+    }
+
+    /* Style ho an'ny sary */
+    .cadre img {
+      max-width: 100%; /* Miantoka fa mifanaraka ny habeny */
+      height: auto; /* Mitahiry ny ratio */
+      border-radius: 5px; /* Sisiny boribory kely */
+      display: block; /* Alefa ambony ilay sary */
+      margin: 0 auto 10px auto; /* Afovoany ary misy elanelana eo ambanin'ny sary */
+    }
+
+    /* Style ho an'ny paragraphe */
+    .cadre p {
+      font-size: 16px; /* Habean'ny texte */
+      color: #333; /* Loko volondavenona maizina */
+      text-align: justify; /* Manao justification ny texte */
+    }
+    
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h3 {
+            text-align: center;
+            color: #007bff;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, input[type="text"], input[type="file"], button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h3 {
+            text-align: center;
+            color: #007bff;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, input[type="text"], input[type="file"], button {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        
+
+       
+       
+    </style>
+  
+</head>
+
+<body>
+    
+<section >
+
+    <div class="navbar">
+        <button onclick="showContent('investissement')">Site d'investissement</button>
+        <button onclick="showContent('gratuit')">Site gratuit</button>
+        <button onclick="showContent('formation')">Formation HTML gratuit & payante </button>
+        <button onclick="showContent('depot')">Hanao dépôt </button>
+        
+        <button onclick="showContent('cv')">Hanao retrait </button>
+        <button onclick="showContent('web')">Création site Web</button>
+        <button onclick="showContent('airdrop')">Projet airdrop</button>
+    </div>
+
+    <div class="content" id="content">
+        <h1>TONGASOA ETO AMIN'NY PLATE-FORME ASA EN LIGNE </h1><br ><br ><br >
+        
+        <p>Safidio eo amin'ny bouton eo ambony ny fampianarana tinao. Azonao atao ihany koa ny manao dépôt sy retrait eto amin'ny pejy, safidio ny bouton retrait /dépôt </p>
+    </div>
+
+    <script>
+        function showContent(section) {
+            const contentDiv = document.getElementById('content');
+            let contentHTML = '';
+
+            switch (section) {
+                case 'investissement':
+                    contentHTML = `
+                      <br ><br ><br >
+                      
+                      <center ><h1 class="c"> SITE FAMPIASAM-BOLA MAHARITRA  </h1><br ><br >
+                      
+                      <h1>🌍WEB3 GPT🌎  </h1><br >
+                      Ity no site izay efa vita analyse tsara, fa mbola haharitra 5mois. Izao no fotoana mety raha hanomboka ampiasa vola ianao. Aza miandry fotoana lava intsony, fa asa en ligne no ataontsika ity. Afaka manomboka amin'ny depot 10$ ianao. Aza adino ihany koa fa izahay dia manao depot direct amin'ny site ho anao izay tsy manana portefeuille electronique, ary afaka manao retrait direct amin'ny portefeuille mobile money ihany koa. Tsindrio ny bokitra dépôt na retrait eo ambony hanao dépôt amin'ireto site d'investissement omenay ireto ianao. Afaka manao depot amin'ny portefeuile électronique ihany koa izahay. 
+                      
+                      </center>
+
+
+<center ><h3>3⃣ Plan d'investissement 🎆</h3></center>
+  
+ 
+<p>dépôt 10$ ⏭️ gains 2.50% na 0.25$ par jours</p><br >
+<p>dépôt 20$ ⏭️ gains 0.50$ par jours</p><br >
+<p>dépôt 50$ ⏭️ gains 1.25$ par jours</p><br >
+<p>dépôt 100$ ⏭️ gains 2.50$ par jours</p><br >
+<p>dépôt 200$ ⏭️ gains 5$ par jours</p><br >
+
+<center>
+    <a href="https://web3-gpt.lat/#/pages/account/register?shareCode=23454294 ">s'inscrire</a><br ><br >
+    
+    
+    <div style="display: flex; align-items: center; gap: 10px;">
+    <strong style="font-size: 18px; font-weight: bold; color: #333;">Code d'invitation :</strong>
+    <span onclick="navigator.clipboard.writeText('23454294')" style="cursor: pointer; display: flex; align-items: center; padding: 8px 15px; background-color: #4CAF50; color: white; border-radius: 5px; font-size: 16px; transition: background-color 0.3s;">
+        Copier 
+        <img src="https://cdn-icons-png.flaticon.com/512/54/54702.png" alt="Copy icon" style="width: 20px; margin-left: 5px;">
+    </span>
+</div><br ><br ><br >
+
+<center> <h1>🌌SF QI PLATFORMS🌌 </h1></center>
+
+<center>
+    
+    Ity koa ny site d'investissement faharoa izay efa vita analyse fa mbola haharitra 5mois. Tamin'ny 15 août 2024 izy io no nivoaka, tsy ny gasy ihany no manao an'ity fa efa olona maneran-tany. 10$ ihany dia efa azonao ampiasaina ato. Araho ny plan d'investissement eto ambany.
+ 
+</center>
+
+         <center>
+             <h3> PLAN D'INVESTISSEMENT </h3>
+
+
+<p>⬛Manao  dépôt 10$ 💵gains 0.25$ par jours✅ </p><br >
+<p>⬛Manao dépôt 20$ 💵gains 0.50$ par jours✅</p><br >
+<p>⬛Manao dépôt 50$ 💵gains 1.25$ par jours✅</p><br >
+<p>⬛ Manao dépôt 100$ 💵gains 2.50$ par jours ✅</p><br >
+<p>⬛Manao dépôt 200$ 💵gains 5$ par jours✅ </p><br >
+....
+
+🟥
+         </center>  <br >
+         
+         <center>
+             
+             <a href="https://www.sf-qi.co/#/pages/register?referral_code=HG77YG">s'inscrire</a><br ><br >
+             
+             <div style="display: flex; align-items: center; gap: 10px;">
+    <strong style="font-size: 18px; font-weight: bold; color: #333;">Code d'invitation :</strong>
+    <span onclick="navigator.clipboard.writeText('HG77YG')" style="cursor: pointer; display: flex; align-items: center; padding: 8px 15px; background-color: #4CAF50; color: white; border-radius: 5px; font-size: 16px; transition: background-color 0.3s;">
+        Copier 
+        <img src="https://cdn-icons-png.flaticon.com/512/54/54702.png" alt="Copy icon" style="width: 20px; margin-left: 5px;">
+    </span>
+</div><br ><br ><br >
+         </center>
+                      
+                      <center>
+                        <h1>💲💶GDQ-WEB3💶💲</h1> <br >
+                        Ity indray site vaovao, nivoaka amin'ity taona 2025 ity. Izahay dia manome garantie ho an'i mpanaraka anay fa maharitra 10mois ity site ity. Hararaoty foana rehefa misy zavatra vaovao mivoaka toy izao, aza miandry efa 7mois nivoahany izay vao hanomboka hanao an'ilay izy. Izao no fotoana izay afahanao manomboka sady mbola tsy misy risque de perte mihits, raha izao ianao no hanomboka hanao an'ilay izy. Harao eto ambany ny plan d'investissement. 
+                        
+                        <h3>PLAN D'INVESTISSEMENT </h3><br >
+                        <p>👉 Depot 10$~29$⏭️ gains 1.3% . Mahazo 2 tâche par jours. </p><br >
+                        <p>👉 Depot 30$~499$⏭️ gains 2% . Mahazo 4 tâche par jours. </p><br >
+                        <p>👉 Depot plus 500$⏭️ gains 3.3% . Mahazo 5 tâche par jours. 
+                        </p><br >
+                          
+                              
+                      </center>
+                      
+                      <center>
+                          <a href="https://gdqai.com/#/register?i=711456">s'inscrire </a><br ><br >
+                          
+                          <div style="display: flex; align-items: center; gap: 10px;">
+    <strong style="font-size: 18px; font-weight: bold; color: #333;">Code d'invitation :</strong>
+    <span onclick="navigator.clipboard.writeText('711456 ')" style="cursor: pointer; display: flex; align-items: center; padding: 8px 15px; background-color: #4CAF50; color: white; border-radius: 5px; font-size: 16px; transition: background-color 0.3s;">
+        Copier 
+        <img src="https://cdn-icons-png.flaticon.com/512/54/54702.png" alt="Copy icon" style="width: 20px; margin-left: 5px;">
+    </span>
+</div><br ><br ><br >
+                          
+                          
+                      </center>
+                    `;
+                    break;
+                case 'gratuit':
+                    contentHTML = `
+                        <center>
+                            <h1>IREO SITE GRATUIT</h1>
+                        <li>IPWEB</li><b><br >
+                        
+                        Tsindrio bokitra commencer  gratuitement Raha te hahazo fampianarana gratuit ianao <br><b><br>
+                        
+                Raha manana olana amin'ny fidirana ianao dia manasa anao izahay hiresaka amin'ny servce client eo ambany <br><br >     
+                        
+                        
+                        <a href="https://m.me/j/AbbjX0YBmpokejn8/">Commencer  gratuitement </a><br ><br > 
+                        </center>
+                        
+                    `;
+                    break;
+                case 'formation':
+                    contentHTML = `
+                    <center>
+                        <h1>TONGASOA ETO AMIN'NY FAMPIANARANA MAMORONA SITE WEB </h1><br >
+                        <h3>FORMATION GRATUIT </h3><br >
+                        <p>Tsindrio ny bokitra commencer raha hanomboka hianatra  </p><br >
+                        
+                        Raha manana olana amin'ny fidirana ianao dia manasa anao izahay hiresaka amin'ny servce client eo ambany <br><br > 
+                        <a href="https://m.me/j/AbbiA8ych68vNIQh/">Commencer </a><br ><br >
+                        <h3>FORMATION PAYANTE </h3><br >
+                        <p>Ny fampianarana dia amin'ny fiteny'malagasy, mora azo tsara ary afaka atao amin'ny téléphone 📱 izany. Ny droit dia 30.000ar tsy misy écolage fa droit ihany. Raha liana ianao dia ny bouton s'inscrire eto ambany </p><br >
+                   
+                    <a href="https://form.jotform.com/243618887253064"> 🔛s'inscrire </a>    
+                      </center> 
+                       
+                    `;
+                    break;
+                case 'depot':
+                    contentHTML = `
+                        <h1>TE HANAO DEPOT VE IANAO? </h1>
+                        <p>Toy izao ny condition @ fanaovana depot eto aminay. </p>
+                        
+                        Tsidio <a href="https://www.facebook.com/61563805195059/posts/pfbid027gRQJXYpG2CKBVeFB62wAEAQcadT2AvfXF3Ky3EA1TVDw2NScb4GAer3r87NWNYLl/ ">eto</a> ny cours du dépôt ato aminay <br><br >
+                        
+                            <li>SAFIFIDIO NY OPERATEUR MOBILE MONEY ETO AMBANY </li><br >
+                            
+                            
+                        <a href="tel:%23144%2A1%2A1%2A0323911654%2A0323911654%23">
+  <button style="padding: 10px 20px; background-color: orange; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    ORANGE MONEY
+  </button>
+</a><br ><br >
+
+<a href="tel:%23111%2A1%2A2%2A0384557584%23">
+  <button style="padding: 10px 20px; background-color: green; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    MVOLA
+  </button>
+</a><br ><br >
+
+<a href="tel:%23133%2A2%2A0333635111%23">
+  <button style="padding: 10px 20px; background-color: red; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    AIRTEL MONEY
+  </button>
+</a><br ><br >
+<!-- Laharana azo kopiana miaraka amin'ny symbole copy -->
+<div style="display: flex; align-items: center ; font-size: 16px; color: black; margin-top: 10px;">
+  <strong>Laharana:</strong> 
+  <span style="margin-left: 10px; cursor: pointer; display: flex; align-items: center;" onclick="navigator.clipboard.writeText('0333635111')">
+    0333635111 
+    <img src="https://cdn-icons-png.flaticon.com/512/54/54702.png" alt="Copy icon" style="width: 20px; height: 20px; margin-left: 5px;">
+  </span>
+</div><br ><br >
+
+
+<section>
+                            <li>ALEFASO ANY AMIN'NY OPERATEUR NOSAFIDINAO NY VOLA TINAO ATAO DEPOT</li><br >
+                            <li>REHEFA LASA NY VOLA DIA TSINDRIO NY BOUTON HANAO DÉPÔT </li><br >
+                            <a href="https://depot-eto-mn-ny-asa-en-ligne.vercel.app/">HANAO DEPOT </a><br ><br >
+                            
+                            <li>TSINDRIO NY BOUTON TUTO, RAHA HIJERY VIDEO FANAOVANA DEPOT IANAO<li><br >
+                        
+                        <a href="https://m.me/j/AbbSOkdbVgKkWSUT/">TUTO </a><br ><br >
+ 
+        
+
+                     `;
+                    break;
+                case 'cv':
+                    contentHTML = `
+                        
+                        
+                        <h1>TE HANAO RETRAIT VE IANAO? </h1>
+ <h4>CONDITION DU RETRAIT </h4> 
+ 
+ Tsidio <a href="https://www.facebook.com/61563805195059/posts/pfbid027gRQJXYpG2CKBVeFB62wAEAQcadT2AvfXF3Ky3EA1TVDw2NScb4GAer3r87NWNYLl/ ">eto</a> ny cours du retrait ato aminay <br><br >
+ 
+ 
+ <li>Tsindrio ny bokitra portefeuille  ambany</li><br ><br >
+ 
+ 
+ 
+ 
+ <a href="https://portefeuille-lectronique-retrait-sooty.vercel.app/">portefeuille </a><br ><br >
+ 
+ <li>Copier ny adresse tinao andefasana ilay vola tinao atao retrait </li><br ><br >
+ <li>Alefaso ny amin'ny adresse izay nosafdinao ny vola tinao atao retrait</li><br ><br >
+ <li>Rehefa vita izany dia kitio ny bokitra retrait ary fenoy ny formulaire du retrait </li><br ><br >
+  <a href="https://retrait-asa-en-ligne.vercel.app/">HANAO RETRAIT </a><br ><br >
+ <li>Tsindrio ny bokitra TUTO eto ambany raha hijery fomba fanaovana retrait eto aminay  </li><br ><br >
+ <a href="https://m.me/j/AbbSOkdbVgKkWSUT/">tuto</a><br ><br >
+ 
+ <li>REMARQUE :</li> Ao @ formulaire misy ny ID DE TRANSACTION, ampidiro eo ny adresse nandefasanao ilay vola
+ <br><br >
+</section > 
+                    `;
+                    break;
+                case 'web':
+                    contentHTML = `
+                        <center>
+                            
+                            <h1> TONGASOA ETO AMIN'NY PEJY FAMORONANA SITE D'INTERNET </h1>
+                        Te hamorona site web ve ianao toy ny:
+                        <li>E-commerce </li><br >
+                        <li>Business en ligne </li><br>
+                        
+                        Azonao atao mifandray amin'ny antso an-téléphone :<br><br >
+                        
+                        <a href="tel:0323911654" style="text-decoration: none; color: blue; font-size: 18px; font-weight: bold;">
+    Antsoy izao📞📲
+</a> 
+                        </center>
+
+                    `;
+                    break;
+                case 'airdrop':
+                    contentHTML = `
+                        <h1>Projet airdrop</h1>
+                        <center >
+                            
+                            <h1>AMPIANDRASANA ISIKA IZAO </h1>
+                        </center>
+                    `;
+                    break;
+                default:
+                    contentHTML = `
+                        <h1>Fampahalalana tsy misy</h1>
+                        <p>Tsy misy fampahalalana azo aseho amin'ity bouton ity.</p>
+                    `;
+            }
+
+            contentDiv.innerHTML = contentHTML;
+        }
+    </script>
+   
+</body>
+
+<script src="//code.tidio.co/qohm2j6hy5em7agru8tgjkx0b52hw6wj.js" async></script>
+
+
+<script>
+  Un ", function () {
+    const elfsightWidget = document.querySelector(".elfsight-app-1eff39fc-46a7-4078-9f06-be4619be5c57");
+    if (elfsightWidget) {
+      elfsightWidget.style.position = "fixed"; // Atao eo amin'ny toerana voafetra
+      elfsightWidget.style.bottom = "20px";    // Elanelana avy any ambany
+      elfsightWidget.style.left = "20px";      // Elanelana avy any ankavia
+      elfsightWidget.style.zIndex = "1000";    // Ambony kokoa
+
+
+    } else {
+      console.error("Tsy hita ilay widget Elfsight!");
+    }
+  });
+</script>
+
+    
+   <script>
+       
+       document.getElementById('formulaire').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    var portefeuille = document.getElementById('portefeuille').value;
+    var montant = document.getElementById('montant').value;
+    var reseau = document.getElementById('reseau').value;
+    var adresse = document.getElementById('adresse').value;
+    var whatsapp = document.getElementById('whatsapp').value;
+    var preuve = document.getElementById('preuve').value;
+
+    var message = "Portefeuille: " + portefeuille + "\n" +
+                  "Montant: " + montant + "\n" +
+                  "Réseau: " + reseau + "\n" +
+                  "Adresse: " + adresse + "\n" +
+                  "Numéro WhatsApp: " + whatsapp + "\n" +
+                  "Preuve de paiement: " + preuve;
+
+    var whatsappUrl = "https://wa.me/261323911654?text=" + encodeURIComponent(message);
+
+    window.open(whatsappUrl, '_blank');
+});
+
+<script>
+    function copyCode() {
+        // Mandika ny kaody
+        navigator.clipboard.writeText('23454294')
+            .then(() => {
+                // Maka ilay span misy ny marika OK
+                const okSymbol = document.getElementById('ok-symbol');
+                
+                // Mampiseho ilay marika OK
+                okSymbol.style.display = 'inline';
+
+                // Manala azy aorian'ny 2 segondra
+                setTimeout(() => {
+                    okSymbol.style.display = 'none';
+                }, 2000);
+            })
+            .catch(err => {
+                console.error('Nisy olana tamin\'ny fanaovana copy:', err);
+            });
+    }
+</script>
+
+   </script>
+   </section >
+</html>
